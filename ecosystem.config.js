@@ -2,6 +2,7 @@ module.exports = {
     apps: [{
         name: `${port} - ${project}`,
         script: `/var/node/${project}/source/app.js`,
+        node_args: '--no-warnings',
         kill_timeout: 3000,
         instances: 1,
         output: `/var/node_logs/${project}-out.log`,
